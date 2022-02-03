@@ -1,9 +1,9 @@
-// 2. Basic Prop
-//Add a "title" prop on MyComponent. Use it so that MyComponent render <h1>It Works</h1>
+// // 3. Passing props to a child component
+// Create a Title component in the components folder. It should take one prop named title.
+// Replace the <h1> in MyComponent with the <Title> component. It should still render "It Works" in the browser. Remember to pass the prop from MyComponent to Title.
 
-export default function MyTitle(){
+export default function MyTitle({title}){
     return (
-        
-        <h1>It Works</h1>
+        <h1>{title}</h1>
     )
 }
