@@ -26,3 +26,8 @@
 * Add necessary styling in the style.scss
 
 ### Oppgave 6: Lists
+* Create an array const food =['Pizza', 'Hamburger', 'Coke];
+* Render this list inside App.js 
+* Use ul>li>/li>/ul> and food.map()
+* Remember to add a key li>.
+* All of this should be inside the return ().
