@@ -21,9 +21,9 @@ function App() {
       {/* Oppgave 2 */}
       <MyTitle/>
     {/* oppgave 4 */}
-      {/* <Wrapper>
+      <Wrapper>
             <MyTitle title = "test"/>
-      </Wrapper> */}
+      </Wrapper>
       
         
 

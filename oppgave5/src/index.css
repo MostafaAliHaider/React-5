@@ -15,3 +15,11 @@ code {
 .container {
   
 }
+
+.flex{
+  width: 50%;
+  background-color: black;
+  color: White;
+  text-align: center;
+  border: 10px solid red
+}
