@@ -47,3 +47,8 @@
 * Add an input field to App.js
 * Listen to change-event on this field 
 * console.log("change") when writing in this input
+
+### Oppgave 10: 
+* Make the input field controlled
+* Use useState to store the input value.
+* Add the value={state} to the input field to make it (controlled)

@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+/* For oppgave 10 */
+import { useState } from "react";
 
 //components 
 import MyComponent from './components/MyComponent';
@@ -16,9 +18,13 @@ function App() {
     console.log("Clicked");
   }
   /* Oppgave 9 */
-  function handleInput(){
-    console.log("change");
+  function handleInput(event){
+    const value = event.target.value;
+    setText(value);
   }
+
+  /* Oppgave 10 */
+  const [text, setText] = useState("");
 
   return (
     <div className="container">
@@ -60,10 +66,22 @@ function App() {
       {/* Oppgave 8 */}
       <button onClick = {button}>Button</button>
       
-      {/* Oppgave 9 */}
+      {/* Oppgave 9 og 10*/}
+      <>
+      <p>Data kommer her...</p>
+      {text}
       <form>
-        <input type= "text" onChange ={handleInput}></input> 
+        <label for = "text"></label>
+        <input 
+        type = "text" 
+        placeholder = "Add text..."
+        onChange ={handleInput} 
+        value={text}>
+          
+          </input> 
       </form>
+      </>
+      
     </div>
   );
 
