@@ -5,10 +5,21 @@ import './App.css';
 import MyComponent from './components/MyComponent';
 import MyTitle from './components/Title';
 import Wrapper from './components/Wrapper';
+import Food from './components/Food';
 
 
 function App() {
+  /* Oppgave 6 og 7 */
   const food = ['Pizza', 'Hamburger', 'Coke'];
+  /* Oppgave 8 */
+  function button(){
+    console.log("Clicked");
+  }
+  /* Oppgave 9 */
+  function handleInput(){
+    console.log("change");
+  }
+
   return (
     <div className="container">
      {/* <MyComponent/> */}
@@ -30,35 +41,36 @@ function App() {
       </Wrapper> */}
 
       {/* Oppgave 6 */}
-      <>
+ {/*      <>
         <ul>
             {food.map(function(foodList, index){
               return <li key= {index}>{foodList}</li>
             })}
           </ul>    
-      </>
+      </> */}
         
+        {/* oppgave 7 */}
+      {/* Under skriver  */}
+        <>
+        <Food food= { food.map(function(foodList, index){
+              return <li key= {index}>{foodList}</li>
+            })}/>
+        </>
       
+      {/* Oppgave 8 */}
+      <button onClick = {button}>Button</button>
+      
+      {/* Oppgave 9 */}
+      <form>
+        <input type= "text" onChange ={handleInput}></input> 
+      </form>
     </div>
   );
+
 }
 
 export default App;
 
-/* Oppgave 7 */
-/* function Component ({ values}) {
-  return (
-    <>
 
-    <h1>Students</h1>
-    <ul>
-      {values.map(value => (
-          <li key= {values.id}>{values.name}</li>
-      ))};
-    </ul>
-    </>
-  )
-}
- */
 
 

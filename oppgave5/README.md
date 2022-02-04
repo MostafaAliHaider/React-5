@@ -31,3 +31,19 @@
 * Use ul>li>/li>/ul> and food.map()
 * Remember to add a key li>.
 * All of this should be inside the return ().
+
+### Oppgave 7: Lists component
+* Create a food component in the component folder
+* Replace the list create above with this component, it should still render the list 
+* Remember to add "food"-prop to the Food> component
+* Send the array as prop 
+
+### Oppgave 8: Event
+* Add a button to app.js
+* Listen to click-event on this button. 
+* Console.log("clicked") when clicking the button.
+
+### Oppgave 9: Input
+* Add an input field to App.js
+* Listen to change-event on this field 
+* console.log("change") when writing in this input
