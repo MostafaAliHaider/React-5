@@ -52,3 +52,13 @@
 * Make the input field controlled
 * Use useState to store the input value.
 * Add the value={state} to the input field to make it (controlled)
+
+### Oppgave 11
+* Combine the button and input 
+* When clicking the button above alert
+* console.log the content out of inputfield
+
+### Oppgave 12
+* Refactor (move) button and input 
+* Create an Alert component in the components folder, Use this inn App.js
+* Move input, button and state from above to this component
